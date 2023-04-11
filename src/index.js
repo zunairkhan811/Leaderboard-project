@@ -1,13 +1,12 @@
-import "./styles.css";
+import './styles.css';
 
 const scoreList = document.querySelector('.score-list');
-const form = document.querySelector('#form');
 const name = document.querySelector('#name');
 const score = document.querySelector('#score');
 const formbtn = document.querySelector('.form-btn');
 
-if(scoreList.textContent.trim() === ''){
-    scoreList.innerHTML = ` <div class="score-items">
+if (scoreList.textContent.trim() === '') {
+  scoreList.innerHTML = ` <div class="score-items">
     <p>Ali: 100</p>
 </div>
 <div class="score-items">
@@ -15,20 +14,15 @@ if(scoreList.textContent.trim() === ''){
 </div>
 <div class="score-items">
     <p>Akram: 30</p>
-</div>`
+</div>`;
 }
-    
-    formbtn.addEventListener('click',(e)=>{
-        e.preventDefault();
-        e.stopPropagation();
-        let namevalue = name.value;
-        let scorevalue = score.value;
-        console.log(namevalue)
-        console.log(scorevalue)
-        scoreList.innerHTML += ` <div class="score-items">
+
+formbtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  const namevalue = name.value;
+  const scorevalue = score.value;
+  scoreList.innerHTML += ` <div class="score-items">
         <p>${namevalue}: ${scorevalue}</p>
-    </div>`
-     })
-
-
-  
+    </div>`;
+});
