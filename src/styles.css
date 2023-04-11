@@ -22,7 +22,7 @@ html {
 
 .project-heading {
   width: 200px;
-  margin: auto;
+  margin-left: 137px;
   position: relative;
   top: 30px;
 }
@@ -42,7 +42,6 @@ html {
 }
 
 .left-box {
-  border: 2px solid #ed0000;
   width: 40%;
   margin: 4px 4px;
 }
@@ -59,13 +58,14 @@ html {
 
 .recent-btn {
   padding: 5px;
-  font-size: 10px;
+  font-size: 17px;
+  width: 100px;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
 }
 
 .score-list {
-  border-top: 2px solid brown;
+  border: 2px solid brown;
   margin-top: 20px;
 }
 
@@ -82,7 +82,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ed0000;
+
+  /* border: 2px solid #ed0000; */
   width: 40%;
   margin: 4px 4px;
 }
@@ -106,9 +107,10 @@ html {
 
 .form-btn {
   display: flex;
+  float: right;
   padding: 5px;
   font-size: 10px;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
-  margin: auto;
+  margin-right: 5px;
 }
