@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/38b6d4ab77.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Meera+Inimai&family=Poppins&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Leatherboard Project</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+<body>
+    <main>
+        <div class="project-heading"><h1>LeaderBoard</h1></div>
+        <div class="main-box">
+            <div class="left-box">
+                <div class="recent-heading">
+                    <h2>Recent Scores</h2>
+                    <button class="recent-btn">Refresh</button>
+                </div>
+                <div class="score-list">
+
+                </div>
+            </div>
+            <div class="right-box">
+                <h3>Add your Score</h3>
+                <form id="form" action="/" method="post">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="30" required />
+                    <input type="number" name="score" id="score" placeholder="Enter Your Score" required />
+                    <button class="form-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

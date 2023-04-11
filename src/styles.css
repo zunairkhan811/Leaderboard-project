@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary-font-family: "Inter", sans-serif;
+  --primary-color: #ff6b00;
+  --color-secondary: #ec5242;
+  --color-tertiary: #d3d3d3;
+  --color-white: #fff;
+  --color-grey: #585858;
+  --color-light-grey: #ebf0ee;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.project-heading {
+  width: 200px;
+  margin-left: 137px;
+  position: relative;
+  top: 30px;
+}
+
+.project-heading h1 {
+  font-size: 30px;
+  color: #f96b6b;
+  border: 2px solid brown;
+}
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 140px;
+}
+
+.left-box {
+  width: 40%;
+  margin: 4px 4px;
+}
+
+.recent-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-heading h2 {
+  font-size: 26px;
+  color: darkorange;
+}
+
+.recent-btn {
+  padding: 5px;
+  font-size: 17px;
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.score-list {
+  border: 2px solid brown;
+  margin-top: 20px;
+}
+
+.score-items:nth-child(even) {
+  background-color: #ffcd4e;
+}
+
+.score-items:nth-child(odd) {
+  background-color: #f7fd76;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 2px solid #ed0000; */
+  width: 40%;
+  margin: 4px 4px;
+}
+
+.right-box h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: darkorange;
+}
+
+#form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-btn {
+  display: flex;
+  float: right;
+  padding: 5px;
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-right: 5px;
+}
