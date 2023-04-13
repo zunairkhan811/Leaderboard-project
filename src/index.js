@@ -1,28 +1,33 @@
 import './styles.css';
+import receiveList from '../modules/getDataFromApi';
 
 const scoreList = document.querySelector('.score-list');
 const name = document.querySelector('#name');
 const score = document.querySelector('#score');
 const formbtn = document.querySelector('.form-btn');
-
-if (scoreList.textContent.trim() === '') {
-  scoreList.innerHTML = ` <div class="score-items">
-    <p>Ali: 100</p>
-</div>
-<div class="score-items">
-    <p>Aslam: 20</p>
-</div>
-<div class="score-items">
-    <p>Akram: 30</p>
-</div>`;
-}
+const form = document.querySelector('#form');
+const refreshbtn = document.querySelector('.recent-btn');
 
 formbtn.addEventListener('click', (e) => {
   e.preventDefault();
   e.stopPropagation();
-  const namevalue = name.value;
-  const scorevalue = score.value;
-  scoreList.innerHTML += ` <div class="score-items">
-        <p>${namevalue}: ${scorevalue}</p>
-    </div>`;
+  let namevalue = name.value;
+  let scorevalue = score.value;
+  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/kabirmybaby/scores/', {
+  method: 'POST',
+  body: JSON.stringify({
+    "user":namevalue,
+    "score":scorevalue
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+   form.reset();
 });
+
+refreshbtn.addEventListener('click',receiveList.runList)
+
+
