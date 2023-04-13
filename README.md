@@ -105,6 +105,8 @@ Install this project with:
 
 To run the project, execute the following command:
 
+ Add npm install, npm run build, and npm run start.
+
 
 --> Click on live Link or Click on live server in Vs Studio.
 
