@@ -63,7 +63,8 @@ html {
   font-family: 'Inter', sans-serif;
   cursor: pointer;
 }
-.recent-btn:hover{
+
+.recent-btn:hover {
   background-color: #ec5242;
   outline: none;
   border-radius: 10px;
@@ -120,7 +121,7 @@ html {
   margin-right: 5px;
 }
 
-.form-btn:hover{
+.form-btn:hover {
   background-color: #ec5242;
   outline: none;
   border-radius: 10px;
